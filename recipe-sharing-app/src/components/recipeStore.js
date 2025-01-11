@@ -23,5 +23,6 @@ const useRecipeStore = create((set) => ({
     return { recommendations: recommended };
   }),
 }));
+// ["setSearchTerm", "searchTerm"]
 
 export { useRecipeStore };
