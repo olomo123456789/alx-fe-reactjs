@@ -6,7 +6,6 @@ const useRecipeStore = create((set) => ({
   recommendations: [],
 
   // Add a recipe to favorites
-  ["addRecipe", "setRecipes"]
   addFavorite: (recipeId) => set((state) => ({
     favorites: [...new Set([...state.favorites, recipeId])], // Prevent duplicates
   })),
